@@ -1,0 +1,731 @@
+body {
+	font-family: 'inter', sans-serif;
+}
+
+
+
+/*CSS DO HEADER*/
+
+header {
+	background-color:white;
+	/*background: url("images/background.jpg");*/
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 145px;
+	pointer-events: none;
+	
+}
+
+nav {
+	position: absolute;
+	top:  34px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color:black;
+	font-size: 26px;
+	transition: 100ms;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color:  #C886FF;
+	transition: 120ms;
+	font-size: 28px;
+}
+
+nav a:active {
+	color: rgb(71, 1, 141);
+}
+
+
+
+/* CSS DOS PLANETAS */
+
+.time-geral {
+	background: linear-gradient(45deg,#542773,#542773,#9a58c6,#C886FF,#C886FF);
+	background-size: 300% 300%;
+	animation: colors 5s ease infinite;
+}
+
+@keyframes colors {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+
+.time {
+	width: 940px;
+	margin: 0 auto;
+	padding: 45px 0;
+}
+
+
+.time li {
+	display: inline-block;
+	text-align: center;
+	width: 28%;
+	vertical-align: top;
+	margin: 2% 2%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	border-radius: 20px;
+	cursor: pointer;
+	background: white;
+	box-shadow: 10px 10px 10px 0px #542773;
+	transition: 200ms;
+}
+
+.descricao:hover {
+	border: 3px solid  #542773;
+	box-shadow: 0px 0px 15px 7px #542773;
+	transition: 200ms;
+}
+
+
+.time li:active {
+	border: 3px solid rgb(195, 0, 255);
+	box-shadow: 0px 0px 15px 7px rgb(134, 0, 139);
+	transition: 200ms;
+}
+
+.time li:hover h2 {
+	font-size: 25px;
+	transition: 200ms;
+}
+
+.time li a {
+	text-decoration: none;
+}
+
+.time li img {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.time h2 {
+	color: black;
+	text-align: center;
+	font-size: 26px;
+	transition: 200ms;
+	font-weight: bold;
+
+}
+
+.descricao-integrantes {
+	color: black;
+	font-size: 22px;
+}
+
+.funcao {
+	color:black ;
+	font-size: 23px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+
+
+/* CSS DO INDEX*/
+
+.banner {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.banner img {
+	width: 100%;
+}
+
+
+/* index | section sistema-sobre */
+
+/*slide| sofrimento*/
+.slider{
+ margin: 0 auto;
+ width: 1520px;
+ height: 600px;
+ overflow: hidden;
+}
+
+.slides{
+	width: 600%;
+	height: 600px;
+	display: flex;
+}
+
+.slides input{
+	display: none;
+}
+
+.slide{
+	width: 25%;
+	position: relative;
+}
+
+.slide img{
+	width: 1685px;
+	height: 600px;
+}
+.manual-navigation{
+	position: absolute;
+	width: 1520px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+.manual-btn{
+	border: 2px solid white;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:Last-child){
+	margin-right: 40px;
+}
+
+.manual-btn:hover{
+		background-color: white;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -50%;
+}
+
+.navigation-auto div{
+	border: 2px solid #542773;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.navigation-auto{
+	position: absolute;
+	width: 1520px;
+	margin-top: 560px;
+	display: flex;
+	justify-content: center;
+}
+
+.navigation-auto div:not(:Last-child){
+	margin-right:40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background-color: white;
+}
+
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background-color: white
+}
+
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background-color: white;
+}
+
+
+/*fim slide|sofriento*/
+
+
+.sistema-sobre {
+	padding-top: 30px;
+	background: linear-gradient(white);
+	background-color: #C886FF;
+}
+
+.sistema-home {
+	padding-top: 30px;
+	background: linear-gradient(white);
+	background-color: #C886FF;
+}
+
+.principal {
+	padding: 2.5em 0;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.cardNv{
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	margin: 2% 2%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	border-radius: 20px;
+	cursor: pointer;
+	background: white;
+	transition: 200ms;
+}
+
+.principal p {
+	margin: 0 0 1em;
+	font-size: 1.5em;
+	text-align: justify;
+	color:black;
+}
+
+.principal strong {
+	font-weight: bold;
+	color: rgb(249 83 155);
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.titulo-principal {
+	font-weight: bold;
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	color: black;
+}
+
+
+/*cards*/
+
+.container{
+	margin: 0 auto;
+	width: 940px;
+}
+
+.card {
+	display: inline-block;
+	text-align: center;
+	width: 18%;
+	vertical-align: top;
+	margin: 8% 8%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	border-radius: 15px;
+}
+
+.cardC{
+	display: inline-block;
+	text-align: center;
+	width: 28%;
+	vertical-align: top;
+	margin: 15% 1%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	border-radius: 15px;
+}
+
+.container li img {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.logo-estilo {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+	box-shadow: 0px 0px 20px 0px rgb(132, 1, 255);
+}
+
+.video-sistema {
+	width: 560px;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+
+/* index | section local */
+.local {
+	padding: 3em 0;
+	background:white;
+	
+}
+
+.local h3 {
+	color: black;
+}
+
+.local p {
+	margin: 0 0 2em;
+	text-align: center;
+	font-size: 1.8em;
+	color: black;
+	font-weight: bold;
+}
+
+.imagem-markting {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.imagem-markting img {
+	width: 100%;
+	border-radius: 10px;
+	padding-bottom: 80px;
+}
+
+/* index | section camadas-terra */
+.camadas-terra {
+	padding: 7em 0;
+	background: black;
+}
+
+.conteudo-camadast {
+	width: 640px;
+	margin: 0 auto;
+	padding: 15px;
+	border-style: double;
+	border: 1px solid white;
+	background: url("images/background.jpg");
+}
+
+.conteudo-camadast h3 {
+	color: white;
+}
+
+.lista-camadast {
+	width: 55%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+	font-size: 1.2em;
+	color: white;
+}
+
+.itens:last-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "★ ";
+}
+
+.camada-cinza {
+	color: #505257;
+}
+
+.camada-laranja {
+	color: #ef4020;
+}
+
+.camada-amarelo {
+	color: #f28f14;
+}
+
+.camada-amareloclaro {
+	color: #f8f57a;
+}
+
+.imagem-camadast {
+	padding: 0 30px;
+	width: 33%;
+	opacity: 1;
+	transition: 400ms;
+}
+
+.imagem-camadast:hover {
+	width: 35%;
+}
+
+/* index | section camadas-geral */
+.camadas-geral {
+	background: linear-gradient( #C886FF,#ba72f4,#C886FF,#8a8888,#333333);
+}
+
+.camadas-geral h4 {
+	padding-top: 15px;
+	color:black;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.camadas {
+	padding: 3em 0;
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*card da pagina sobre*/
+
+.card-total{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	padding: 60px;
+	overflow: hidden;
+}
+
+.card-total .card-sobre:nth-child(1){
+	margin-left: 20px;
+}
+
+.card-sobre {
+	background-color: white;
+	width: 300px;
+	height: 60px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+	padding: 30px;
+	font-size: 10px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 0 99px 0 #C886FF;
+	margin-left: -150px;
+	transition: 0.2s;
+	
+}
+
+.card-sobre:hover{
+	margin-right: 150px;
+	transform: translateY(-20px)
+}
+
+.card-sobre:hover+card-sobre {
+	margin-left: -1em;
+}
+ /*fim do card da pagina sobre*/
+.camadas div:not(#troposfera) {
+	padding-bottom: 220px;
+}
+
+.camadas h1 {
+	color:black;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.descricao-camada {
+    margin: 0 0 1em;
+    font-size: 1.5em;
+    text-align: justify;
+    color: black;
+}
+
+/* index | section espaco-geral */
+.espaco-geral {
+	background: #adb8ca;
+}
+
+.espaco {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.onibus {
+	width: 100%;
+}
+
+
+.valores {
+	text-align: center;
+	margin: 0 0 1em;
+    font-size: 1.5em;
+    color: black;
+}
+
+/* CSS DA PÁGINA DE CONTATO */
+
+.principal-contato {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0px;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	font-size: 18px;
+	background: rgb(255, 255, 255);
+	border: 1px solid black;
+	border-radius: 5px;
+	transition: 0.1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background:   #C886FF;
+	color: white;
+	border: #C886FF;
+}
+
+table {
+	margin: 20px 0 40px;
+	box-shadow: black 0px 0px 4px 1px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 8px 15px;
+}
+
+
+
+/* CSS DO FOOTER */
+
+footer {
+	text-align: center;
+	background:   #333333;
+	padding: 3px 0;
+}
+
+.info-dev {
+	margin: 30px 0;
+}
+
+.info-dev h1 {
+	margin: 5px 0;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.info li a {
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.info li a:hover {
+	color: red;
+	text-decoration: underline;
+}
+#333333
+.info img {
+	width: 25px;
+	margin: 0px 8px 0px 0px;
+}
+
+.copyright {
+	color:  white;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width:  480px) {
+	.caixa {
+		width: auto;
+	}
+
+	.principal, .conteudo-camadast, .imagem-terra, .video-sistema, .espaco {
+		width: auto;
+	}
+
+	.planetas {
+		width: auto;	
+	}
+
+	.planetas h2, .ano-solar, .descricao-planeta {
+		font-size: 1em;
+	}
+
+	.planetas li {
+		width: 46%;
+		align-content: center;
+		margin: 5px 6px;
+	}
+
+	.planetas li:hover h2 {
+	font-size: 1.05em;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-camadast, .imagem-camadast {
+		width: 85%;
+	}
+
+.principal-contato {
+	width: 95%;	
+}
+
+	form label, form legend {
+	font-size: 1.5em;
+	margin: 10px 0 10px;
+}
+
+	.enviar {
+		font-size: 1em;
+	}
+
+
+
+}
