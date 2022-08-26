@@ -320,10 +320,6 @@ nav a:active {
 	color: black;
 }
 
-.titulo-principal h4{
-	color: #FFB3F6;
-}
-
 
 /*cards*/
 
@@ -478,14 +474,13 @@ nav a:active {
 
 .camadas-geral h4 {
 	padding-top: 15px;
-	color:black;
+	color: #FFD8FB;
 	font-size: 2.5em;
 	text-transform: uppercase;
 	text-align: center;
 }
 
 .camadas {
-	padding: 3em 0;
 	width: 940px;
 	margin: 0 auto;
 }
